@@ -1,0 +1,15 @@
+src/assets
+dist
+dist-outer
+node_modules
+public
+.husky
+.bin
+docs
+html
+icon
+iconfont
+.vscode
+.idea
+*.sh
+*.md

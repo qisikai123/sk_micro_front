@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from '@/views/Home.vue'
-import App1Container from '@/views/App1Container.vue'
-import App2Container from '@/views/App2Container.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from '@/views/Home.vue';
+import App1Container from '@/views/App1Container.vue';
+import App2Container from '@/views/App2Container.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'hash',
@@ -25,4 +25,4 @@ export default new Router({
       component: App2Container,
     },
   ],
-})
+});

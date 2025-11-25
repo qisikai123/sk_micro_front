@@ -23,58 +23,58 @@
 </template>
 
 <script>
-export default {
-  name: 'App',
-}
+  export default {
+    name: 'App',
+  };
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables.scss';
+  @import '@/styles/variables.scss';
 
-.app-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-  background: $color-primary;
-  color: #fff;
+  .app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: $color-primary;
+    color: #fff;
 
-  .logo {
-    font-size: 18px;
-    font-weight: bold;
-  }
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-  .nav {
-    a {
-      color: #fff;
-      margin-left: 16px;
-      text-decoration: none;
+    .nav {
+      a {
+        color: #fff;
+        margin-left: 16px;
+        text-decoration: none;
 
-      &.router-link-exact-active {
-        font-weight: bold;
-        text-decoration: underline;
+        &.router-link-exact-active {
+          font-weight: bold;
+          text-decoration: underline;
+        }
       }
     }
   }
-}
 
-.app-main {
-  display: flex;
-  height: calc(100vh - 56px);
-}
+  .app-main {
+    display: flex;
+    height: calc(100vh - 56px);
+  }
 
-.main-view {
-  flex: 1;
-  padding: 16px;
-  overflow: auto;
-}
+  .main-view {
+    flex: 1;
+    padding: 16px;
+    overflow: auto;
+  }
 
-.subapp-view {
-  width: 50%;
-  min-width: 400px;
-  border-left: 1px solid #e5e5e5;
-  padding: 16px;
-  background: #fafafa;
-  overflow: auto;
-}
+  .subapp-view {
+    width: 50%;
+    min-width: 400px;
+    border-left: 1px solid #e5e5e5;
+    padding: 16px;
+    background: #fafafa;
+    overflow: auto;
+  }
 </style>

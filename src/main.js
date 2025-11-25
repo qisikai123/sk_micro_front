@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import './styles/index.scss'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import './styles/index.scss';
 
-import { registerMicroApps, start } from 'qiankun'
-import shared from './shared'
+import { registerMicroApps, start } from 'qiankun';
+import shared from './shared';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 // 简单的 hash 模式激活规则生成器
 const genActiveRule = hashPrefix => {
-  return location => location.hash.startsWith(`#${hashPrefix}`)
-}
+  return location => location.hash.startsWith(`#${hashPrefix}`);
+};
 
 // 注册子应用（目前只接入 subapp1；如需更多子应用可在此追加）
 registerMicroApps([
@@ -24,14 +24,14 @@ registerMicroApps([
       shared,
     },
   },
-])
+]);
 
 // 启动 qiankun
 start({
   sandbox: {
     experimentalStyleIsolation: true,
   },
-})
+});
 
 // 可选：把共享能力挂到全局，子应用也可以通过 window 访问
 // window.__QIANKUN_SHARED__ = shared;
@@ -39,4 +39,4 @@ start({
 new Vue({
   router,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');

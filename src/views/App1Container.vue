@@ -7,15 +7,15 @@
 </template>
 
 <script>
-export default {
-  name: 'App1Container',
-}
+  export default {
+    name: 'App1Container',
+  };
 </script>
 
 <style lang="scss" scoped>
-.child-container {
-  h2 {
-    margin-bottom: 8px;
+  .child-container {
+    h2 {
+      margin-bottom: 8px;
+    }
   }
-}
 </style>

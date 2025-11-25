@@ -1,0 +1,15 @@
+dist
+dist-outer
+build
+node_modules
+public
+.husky
+.bin
+docs
+html
+icon
+iconfont
+.vscode
+.idea
+*.sh
+*.md
