@@ -5,6 +5,9 @@ module.exports = {
   extends: ['plugin:vue/essential', 'eslint:recommended', 'plugin:prettier/recommended'],
   parserOptions: {
     parser: '@babel/eslint-parser',
+    requireConfigFile: false, // 让 @babel/eslint-parser 不再强制查找 babel.config.js，避免在多项目根目录下报错
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
   rules: {
     'no-unused-vars': [
